@@ -6,8 +6,8 @@
         var socket = new WebSocket(host);
         socket.onmessage = function(e) {
             document.getElementById('root').innerHTML = e.data;
+            console.log(e.data);
         };
-        console.log("assadsafdzsa");
     </script>
 </body>
 </html>
