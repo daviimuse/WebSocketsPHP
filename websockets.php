@@ -24,10 +24,10 @@
     socket_write($client, $headers, strlen($headers));
 
     // Send messages into WebSocket in a loop.
-    while (true) {
-        sleep(1);
-        $content = 'Now: ' . time();
+    // while (true) {
+    //     sleep(1);
+        $content = 'Prova';
         $response = chr(129) . chr(strlen($content)) . $content;
         socket_write($client, $response);
-    }
+    // }
 ?>
